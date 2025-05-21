@@ -1,0 +1,5 @@
+- name: Include block_ip task file
+  include_tasks: block_ip.yml
+
+- name: include unblock_ip task file
+  include_tasks: unblock_ip.yml

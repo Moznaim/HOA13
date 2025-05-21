@@ -1,0 +1,3 @@
+- name: unblock address on CheckPoint firewall
+  debug:
+    msg: "Unblocking {{ source_ip }} → {{ destination_ip }}"

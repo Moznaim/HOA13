@@ -1,0 +1,12 @@
+- name: block IP address
+  hosts: manage_node
+  connection: httpapi
+  gather_facts: no
+
+  tasks:
+    - include_role:
+        name: acl_manager
+      vars:
+        source_ip: 102.168.56.113
+        destination_ip: 192.168.56.112
+        ansible_network_os: checkpoint
